@@ -1,0 +1,7 @@
+CREATE TABLE Player (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    Name VARCHAR(255) NOT NULL,
+    Nationality VARCHAR(255) NOT NULL,
+    Birth_date TIMESTAMP,
+    Titles INTEGER
+);
