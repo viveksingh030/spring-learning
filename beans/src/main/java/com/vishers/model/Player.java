@@ -1,7 +1,6 @@
-package com.visher.spring.boot.data;
+package com.vishers.model;
 
 import java.sql.Date;
-import java.sql.Time;
 
 public class Player {
 	private int id;

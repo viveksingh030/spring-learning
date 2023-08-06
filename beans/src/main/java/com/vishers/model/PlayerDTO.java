@@ -1,4 +1,4 @@
-package com.visher.spring.boot.data;
+package com.vishers.model;
 
 import java.sql.Date;
 public class PlayerDTO {
