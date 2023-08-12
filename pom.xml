@@ -19,6 +19,7 @@
         <module>beans</module>
         <module>spring-data-rest</module>
         <module>spring-database-relationship</module>
+        <module>spring-aop</module>
     </modules>
 
     <properties>
