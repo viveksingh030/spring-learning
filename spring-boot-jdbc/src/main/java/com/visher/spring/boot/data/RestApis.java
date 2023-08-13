@@ -1,7 +1,5 @@
 package com.visher.spring.boot.data;
 
-import com.vishers.model.Player;
-import com.vishers.model.PlayerDTO;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -30,12 +28,12 @@ public class RestApis {
     }
 
     @PutMapping("/players/{player}")
-    public int get(@PathVariable("player") int player, @RequestBody PlayerDTO playerDTO) {
+    public int get(@PathVariable("player") int player, @RequestBody Player playerDTO) {
         return playerService.updatePlayer(player, playerDTO);
     }
 
     @PostMapping("/players")
-    public int get(@RequestBody PlayerDTO player) {
+    public int get(@RequestBody Player player) {
         return playerService.create(player);
     }
 }

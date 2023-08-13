@@ -1,11 +1,29 @@
-package com.vishers.model;
+package com.visher.spring.mvc;
 
-import java.sql.Date;
-public class PlayerDTO {
+import java.util.Date;
+
+public class Player {
+    private int id;
     private String name;
     private String nationality;
     private Date birthDate;
     private int titles;
+
+    public Player(int id, String name, String nationality, Date birthDate, int titles) {
+        this.id = id;
+        this.name = name;
+        this.nationality = nationality;
+        this.birthDate = birthDate;
+        this.titles = titles;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
@@ -38,4 +56,7 @@ public class PlayerDTO {
     public void setTitles(int titles) {
         this.titles = titles;
     }
+    //constructor
+
+    //getter methods
 }

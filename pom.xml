@@ -16,7 +16,6 @@
         <module>spring-bean-scope</module>
         <module>spring-boot-jdbc</module>
         <module>spring-boot-jpa</module>
-        <module>beans</module>
         <module>spring-data-rest</module>
         <module>spring-database-relationship</module>
         <module>spring-aop</module>
@@ -35,11 +34,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.visher</groupId>
-            <artifactId>beans</artifactId>
-            <version>1.0-SNAPSHOT</version>
         </dependency>
 
         <dependency>

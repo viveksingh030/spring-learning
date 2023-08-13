@@ -1,4 +1,5 @@
-package com.vishers.model;
+package com.visher.spring.boot.data;
+
 
 import java.sql.Date;
 
@@ -8,11 +9,11 @@ public class Player {
     private String nationality;
     private Date birthDate;
     private int titles;
-	
+
     public Player( ) {
-    
+
     }
-    
+
     public Player(int id, String name, String nationality, Date birthDate, int titles) {
 		super();
 		this.id = id;
@@ -67,4 +68,4 @@ public class Player {
 		return "\nPlayer [id= " + id + ", name= " + name + ", nationality= " + nationality + ", birthDate= " + birthDate
 				+ ", titles= " + titles + "]";
 	}
-}	
+}

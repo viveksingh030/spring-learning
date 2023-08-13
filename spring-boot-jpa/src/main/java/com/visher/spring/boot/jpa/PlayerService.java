@@ -1,6 +1,5 @@
 package com.visher.spring.boot.jpa;
 
-import com.vishers.model.PlayerDTO;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -48,7 +47,7 @@ public class PlayerService {
         return playerRepository.save(player);
     }
 
-    public Player save(PlayerDTO playerDTO) {
+    public Player save(Player playerDTO) {
         Player player = new Player();
         BeanUtils.copyProperties(playerDTO, player);
         return playerRepository.save(player);

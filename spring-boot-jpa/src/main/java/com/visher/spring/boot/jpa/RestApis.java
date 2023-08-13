@@ -1,6 +1,5 @@
 package com.visher.spring.boot.jpa;
 
-import com.vishers.model.PlayerDTO;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -34,7 +33,7 @@ public class RestApis {
     }
 
     @PostMapping("/players")
-    public Player save(@RequestBody PlayerDTO player) {
+    public Player save(@RequestBody Player player) {
         return playerService.save(player);
     }
 }

@@ -1,7 +1,5 @@
 package com.visher.spring.boot.data;
 
-import com.vishers.model.Player;
-import com.vishers.model.PlayerDTO;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
@@ -53,7 +51,7 @@ public class PlayerDao {
         return jdbcTemplate.update(sql, new Object[]{id});
     }
 
-    public int updatePlayer(int id, PlayerDTO player) {
+    public int updatePlayer(int id, Player player) {
         String sql = "UPDATE PLAYER SET Birth_date = ? , Titles = ? WHERE ID = ?";
         return jdbcTemplate.update(sql, new Object[]{
                 new Timestamp(player.getBirthDate().getTime()), player.getTitles(), id});
