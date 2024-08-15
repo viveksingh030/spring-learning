@@ -1,5 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
          pageEncoding="ISO-8859-1"%>
 
@@ -32,6 +32,10 @@ The player has been added.
         <li>${grandSlam}</li>
     </c:forEach>
 </ul>
-
+<br><br>
+Player Rank: &emsp;${athlete.rank}
+<br><br>
+<b>Last Won</b> : <fmt:formatDate type="date" value="${athlete.lastWon}"  pattern="dd-MM-YYYY"/>
+<b>Prize Money</b> : ?{athlete.prizeMoney}
 </body>
 </html>

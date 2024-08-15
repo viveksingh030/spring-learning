@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: spring-security
+
+server:
+  port: 8443
+  ssl:
+    key-store: classpath:certificate.p12
+    key-store-password: "12345"
+    key-store-type: PKCS12
+    key-alias: certificate
+
+management:
+  endpoint:
+    health:
+      show-details: always
+      show-components: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+      base-path: /${spring.application.name}
+
+
